@@ -1,0 +1,19 @@
+#pragma once
+
+// インクルードファイル
+/// このファイルをインクルードすると以下の全てのファイルがインクルードされます
+#include "glew.h"
+#include "glfw3.h"
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "glm/gtx/transform2.hpp"
+#include "glm/gtx/rotate_vector.hpp"
+#include "OpenAL/al.h"
+#include "OpenAL/alc.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <algorithm>
+#include <functional>
+#include <iostream>
+#include <fstream>
+#include "Global.h"

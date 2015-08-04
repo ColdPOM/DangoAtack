@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\ライブラリ">
+      <UniqueIdentifier>{7c5496c4-c275-4fd0-a749-e32f3ad2d9aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ライブラリ\モデル">
+      <UniqueIdentifier>{4ca0871c-390f-4e11-ad75-cc94ddc6b0fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ライブラリ\入力">
+      <UniqueIdentifier>{7f509232-6b38-4ab7-87d6-3d24edf30f7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ライブラリ\テクスチャー">
+      <UniqueIdentifier>{0b7f9576-f02a-4907-98f9-b71d38e52ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ライブラリ\Window">
+      <UniqueIdentifier>{3b2d1530-d05e-47a9-9dd7-26daa77c552a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ゲーム">
+      <UniqueIdentifier>{d773c71b-473c-46ae-9e03-55ad7ff23c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ゲーム\シーン">
+      <UniqueIdentifier>{3939c427-b7d9-40f2-baaa-5738ac65ca43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ライブラリ\デバッグ">
+      <UniqueIdentifier>{6f614ef3-e07c-4239-93ec-64678380f5d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ゲーム\オブジェクト">
+      <UniqueIdentifier>{93cb71ca-2492-408e-8466-dcb822e7ab36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ライブラリ\シェーダー">
+      <UniqueIdentifier>{003c5f9c-8049-41b8-9b12-203b85799357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ゲーム\マネージャー">
+      <UniqueIdentifier>{40eb70cb-086e-426e-9ac6-ad35b3086818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ライブラリ\サウンド">
+      <UniqueIdentifier>{ada2eae6-af2a-4a59-927d-03064f32e36c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="PMD.cpp">
+      <Filter>ソース ファイル\ライブラリ\モデル</Filter>
+    </ClCompile>
+    <ClCompile Include="VMD.cpp">
+      <Filter>ソース ファイル\ライブラリ\モデル</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>ソース ファイル\ライブラリ\モデル</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>ソース ファイル\ライブラリ\入力</Filter>
+    </ClCompile>
+    <ClCompile Include="Key.cpp">
+      <Filter>ソース ファイル\ライブラリ\入力</Filter>
+    </ClCompile>
+    <ClCompile Include="DDS.cpp">
+      <Filter>ソース ファイル\ライブラリ\テクスチャー</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>ソース ファイル\ライブラリ\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMain.cpp">
+      <Filter>ソース ファイル\ゲーム\シーン</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugGL.cpp">
+      <Filter>ソース ファイル\ライブラリ\デバッグ</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>ソース ファイル\ライブラリ\シェーダー</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>ソース ファイル\ゲーム\マネージャー</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>ソース ファイル\ゲーム\マネージャー</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>ソース ファイル\ゲーム\シーン</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>ソース ファイル\ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite2D.cpp">
+      <Filter>ソース ファイル\ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="Shot.cpp">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ShotManager.cpp">
+      <Filter>ソース ファイル\ゲーム\マネージャー</Filter>
+    </ClCompile>
+    <ClCompile Include="Billboard.cpp">
+      <Filter>ソース ファイル\ライブラリ</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>ソース ファイル\ゲーム\シーン</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>ソース ファイル\ゲーム</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>ソース ファイル\ライブラリ\サウンド</Filter>
+    </ClCompile>
+    <ClCompile Include="WAVE.cpp">
+      <Filter>ソース ファイル\ライブラリ\サウンド</Filter>
+    </ClCompile>
+    <ClCompile Include="Loading.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VMD.h">
+      <Filter>ソース ファイル\ライブラリ\モデル</Filter>
+    </ClInclude>
+    <ClInclude Include="PMD.h">
+      <Filter>ソース ファイル\ライブラリ\モデル</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>ソース ファイル\ライブラリ\モデル</Filter>
+    </ClInclude>
+    <ClInclude Include="Key.h">
+      <Filter>ソース ファイル\ライブラリ\入力</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>ソース ファイル\ライブラリ\入力</Filter>
+    </ClInclude>
+    <ClInclude Include="DDS.h">
+      <Filter>ソース ファイル\ライブラリ\テクスチャー</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>ソース ファイル\ライブラリ\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMain.h">
+      <Filter>ソース ファイル\ゲーム\シーン</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGL.h">
+      <Filter>ソース ファイル\ライブラリ\デバッグ</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>ソース ファイル\ライブラリ\シェーダー</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>ソース ファイル\ゲーム\マネージャー</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>ソース ファイル\ゲーム\マネージャー</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>ソース ファイル\ゲーム\シーン</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>ソース ファイル\ライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite2D.h">
+      <Filter>ソース ファイル\ライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Shot.h">
+      <Filter>ソース ファイル\ゲーム\オブジェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="ShotManager.h">
+      <Filter>ソース ファイル\ゲーム\マネージャー</Filter>
+    </ClInclude>
+    <ClInclude Include="Billboard.h">
+      <Filter>ソース ファイル\ライブラリ</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>ソース ファイル\ゲーム\シーン</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>ソース ファイル\ゲーム</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>ソース ファイル\ライブラリ\サウンド</Filter>
+    </ClInclude>
+    <ClInclude Include="WAVE.h">
+      <Filter>ソース ファイル\ライブラリ\サウンド</Filter>
+    </ClInclude>
+    <ClInclude Include="Loading.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\Model.frag">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Shader\Model.vert">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Shader\Line.frag">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Shader\Line.vert">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Shader\Billboard.frag">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Shader\Billboard.vert">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Shader\Sprite2D.frag">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="Shader\Sprite2D.vert">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+</Project>
