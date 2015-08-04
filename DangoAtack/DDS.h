@@ -60,6 +60,18 @@ namespace dds{
 	// ---------------------------------------------------------
 	class DDS
 	{
+	public:
+		GLuint ID;
+		DDS();
+		~DDS();
+    
+		GLuint Load(const char *fileName);
+
+		// ゲッター
+		GLuint getWidth() { return width; }
+		GLuint getHeight() { return height; }
+
+
 	protected:
 		GLuint imageSize;
 		GLubyte *imageData;
@@ -73,17 +85,6 @@ namespace dds{
 
 		void decompressDDS();
 		bool readDDS(const char *fileName);
-
-	public:
-		GLuint ID;
-		DDS();
-		~DDS();
-    
-		GLuint Load(const char *fileName);
-
-		// ゲッター
-		GLuint getWidth() { return width; }
-		GLuint getHeight() { return height; }
 	};
 }
 

@@ -8,23 +8,6 @@ class ShotManager;
 
 class Shot
 {
-private:
-	Billboard mBillboad; // 描画する弾
-	ShotManager* mShotManager; // 自分を管理するマネージャー
-	GameObject* mTarget;     // 目標とするオブジェクト
-	const float mLifeTime;   // 生存時間
-	float mLifeCount;        // 発射されてからの時間
-
-	glm::vec3 mPos;    // 座標
-	float mScale;      // 拡大率
-
-	bool mIs;            // 生存フラグ
-	glm::vec3 mFront;    // 前方ベクトル
-	glm::vec3 mMoveVec;  // オブジェクトの動きを表すベクトル
-	float mSpeed;        // 移動スピード
-	bool mVisible;       // 可視
-	float mDistance;     // カメラからの距離
-
 public:
 	Shot(void);
 	~Shot(void);
@@ -56,5 +39,25 @@ public:
 	inline void setScale(float scale) { mScale = scale; } // 拡大率の設定(XYZ軸ごとの大きさ指定
 	inline void setMoveVec(glm::vec3 vec) { mMoveVec = vec; }  // 移動ベクトルを設定
 	inline void setVisible(bool visble) { mVisible = visble; } // 可視化
+
+
+
+private:
+	Billboard mBillboad; // 描画する弾
+	ShotManager* mShotManager; // 自分を管理するマネージャー
+	GameObject* mTarget;     // 目標とするオブジェクト
+	const float mLifeTime;   // 生存時間
+	float mLifeCount;        // 発射されてからの時間
+
+	glm::vec3 mPos;    // 座標
+	float mScale;      // 拡大率
+
+	bool mIs;            // 生存フラグ
+	glm::vec3 mFront;    // 前方ベクトル
+	glm::vec3 mMoveVec;  // オブジェクトの動きを表すベクトル
+	float mSpeed;        // 移動スピード
+	bool mVisible;       // 可視
+	float mDistance;     // カメラからの距離
+
 };
 

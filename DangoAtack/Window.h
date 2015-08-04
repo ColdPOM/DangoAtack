@@ -7,9 +7,6 @@
 /// このクラスを継承したクラスのインスタンスを一つ以上生成する必要がある
 class Window
 {
-protected:
-	GLFWwindow *window;
-
 public:
 	//コンストラクタ
 	Window (int width = WIN_W, int height = WIN_H, const char *title = TITLE_NAME); //ウィンドウを生成します
@@ -21,5 +18,9 @@ public:
 	virtual void Draw(); // 描画処理
 	int	shouldClose() {	return	glfwWindowShouldClose(window); } //ウィンドウを破棄するかどうか
 	void swapBuffers(); // ダブルバッファの切り替えとイベント取得
+
+
+protected:
+	GLFWwindow *window;
 };
 

@@ -7,12 +7,6 @@ class Shot;
 
 class ShotManager
 {
-private:
-
-	Shot* mShots;                  // 弾オブジェクト配列
-	int mShotCount;                // 弾の数
-	std::vector<Shot*> mActiveList;    // アクティブリスト
-
 public:
 	ShotManager(void);
 	~ShotManager(void);
@@ -30,5 +24,11 @@ public:
 	inline void pushActiveObject(Shot* Shot) { mActiveList.push_back(Shot); }    // アクティブリストに追加 
 	inline void eraseActiveObject(int i) {mActiveList.erase(mActiveList.begin() + i); }  // アクティブリストのi番目の要素を削除
 	
+
+
+private:
+	Shot* mShots;                  // 弾オブジェクト配列
+	int mShotCount;                // 弾の数
+	std::vector<Shot*> mActiveList;    // アクティブリスト
 };
 

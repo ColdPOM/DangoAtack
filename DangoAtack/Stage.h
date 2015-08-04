@@ -3,16 +3,6 @@
 
 class Stage
 {
-private:
-	bool BossBattle; // ボス戦フラグ
-
-	Model mGround; // 床
-	Model mLand;   // ボス戦場
-	Model mSky;    // 空
-	Model mTree;  // 木
-	glm::vec3* mTreePos; // 木の座標リスト
-	const int mTreeCount; // 木の数
-
 public:
 	Stage(void);
 	~Stage(void);
@@ -33,5 +23,18 @@ public:
 
 	// ボスバトルフラグの設定
 	inline void setBossFlag(bool flag) { BossBattle = flag; } 
+
+
+
+private:
+	bool BossBattle; // ボス戦フラグ
+
+	Model mGround; // 床
+	Model mLand;   // ボス戦場
+	Model mSky;    // 空
+	Model mTree;  // 木
+	glm::vec3* mTreePos; // 木の座標リスト
+	const int mTreeCount; // 木の数
+
 };
 

@@ -8,20 +8,6 @@
 // ---------------------------------------------------------------------------
 class Key
 {
-private:
-	GLFWwindow *window; // ウィンドウハンドル
-
-	bool mPreA;
-	bool mNowA;
-	bool mPreS;
-	bool mNowS;
-	bool mPreD;
-	bool mNowD;
-	bool mPreW;
-	bool mNowW;
-	bool mPreSpace;
-	bool mNowSpace;
-
 public:
 	Key(void);
 	~Key(void);
@@ -69,5 +55,21 @@ public:
     inline bool IsPushSpace() { return !mPreSpace && mNowSpace; }
     inline bool IsReleaseSpace() { return mPreSpace && !mNowSpace; }
     inline bool IsUpSpace() { return !mNowSpace; }
+
+
+
+private:
+	GLFWwindow *window; // ウィンドウハンドル
+
+	bool mPreA;
+	bool mNowA;
+	bool mPreS;
+	bool mNowS;
+	bool mPreD;
+	bool mNowD;
+	bool mPreW;
+	bool mNowW;
+	bool mPreSpace;
+	bool mNowSpace;
 };
 

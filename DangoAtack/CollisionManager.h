@@ -7,11 +7,6 @@
 
 class CollisionManager
 {
-private:
-	bool BossBattle; // ボス戦フラグ
-
-	Sound mHitSE;
-
 public:
 	CollisionManager(void);
 	~CollisionManager(void);
@@ -24,5 +19,13 @@ public:
 
 	// ボスバトルフラグの設定
 	inline void setBossFlag(bool flag) { BossBattle = flag; }
+
+
+
+private:
+	bool BossBattle; // ボス戦フラグ
+
+	Sound mHitSE;
+
 };
 

@@ -13,12 +13,6 @@
 
 class Game : public Window
 {
-private:
-	Scene* ActiveScene; // 現在使用しているシーンオブジェクトのポインタ
-	Scene::SCENE scene; // 現在どのシーンを使用しているか
-
-	Loading loading; // ローディング画面の表示
-
 public:
 	Game(int width = WIN_W, int height = WIN_H, const char *title = TITLE_NAME);
 	~Game(void);
@@ -26,5 +20,14 @@ public:
 	void Init(); // 初期化
 	void Update(); // 更新
 	void Draw(); // 描画
+
+
+
+private:
+	Scene* ActiveScene; // 現在使用しているシーンオブジェクトのポインタ
+	Scene::SCENE scene; // 現在どのシーンを使用しているか
+
+	Loading loading; // ローディング画面の表示
+
 };
 

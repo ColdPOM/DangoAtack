@@ -8,16 +8,6 @@ class Enemy;
 
 class EnemyManager
 {
-private:
-	bool GameClear; // ゲームクリアフラグ
-
-	Player* mPlayer;                    // プレイヤーオブジェクトのポインタ
-	Enemy* mEnemys;                     // 敵オブジェクト配列
-	const int mEnemyCount;              // 出現できる敵の数
-	std::vector<Enemy*> mActiveList;    // アクティブリスト
-
-	ShotManager mShotManager; // 敵が放つ弾はショットマネージャーで管理
-
 public:
 	EnemyManager(void);
 	~EnemyManager(void);
@@ -40,5 +30,17 @@ public:
 	// アクティブリストの操作
 	inline void pushActiveObject(Enemy* enemy) { mActiveList.push_back(enemy); }       // 末尾に判定を行うEnemyへの参照を追加 
 	inline void eraseActiveObject(int i) { mActiveList.erase(mActiveList.begin() + i); }  // アクティブリストのi番目の要素を削除
+
+
+
+private:
+	bool GameClear; // ゲームクリアフラグ
+
+	Player* mPlayer;                    // プレイヤーオブジェクトのポインタ
+	Enemy* mEnemys;                     // 敵オブジェクト配列
+	const int mEnemyCount;              // 出現できる敵の数
+	std::vector<Enemy*> mActiveList;    // アクティブリスト
+
+	ShotManager mShotManager; // 敵が放つ弾はショットマネージャーで管理
 };
 

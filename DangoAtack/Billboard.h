@@ -10,6 +10,28 @@
 
 class Billboard
 {
+public:
+	Billboard(void);
+	~Billboard(void);
+
+	void Load(const char* fileName, const char* path);   // 読み込み
+	void DrawBill();  // 通常のビルボード描画
+	void DrawBillY(); // Y軸ビルボードの描画
+
+	// セッター
+	inline void setScale(const float scale) { mScale = glm::vec3(scale, scale, 1.0f); }
+	inline void setScale(const glm::vec2& scale) { mScale = glm::vec3(scale.x, scale.y, 1.0f); }
+	inline void setPos(const glm::vec3& pos) { mPos = pos; }
+	inline void Move(const glm::vec3& vec) { mPos += vec; }
+
+	// ゲッター
+	inline glm::vec3 getPos() { return mPos; }
+	inline glm::vec2 getSize() { return glm::vec2(mScale.x, mScale.y); }
+	inline glm::mat4 getModelMatrix() { return modelMatrix; }
+	inline glm::mat4 getPVM() { return pvmMatrix; }
+
+
+
 private:
 	Shader shader;		   // シェーダ
 	GLuint vertexArray;    // バーテックスアレイオブジェクト
@@ -30,24 +52,5 @@ private:
 	// プリミティブの描画
 	void Draw();
 
-public:
-	Billboard(void);
-	~Billboard(void);
-
-	void Load(const char* fileName, const char* path);   // 読み込み
-	void DrawBill();  // 通常のビルボード描画
-	void DrawBillY(); // Y軸ビルボードの描画
-
-	// セッター
-	inline void setScale(const float scale) { mScale = glm::vec3(scale, scale, 1.0f); }
-	inline void setScale(const glm::vec2& scale) { mScale = glm::vec3(scale.x, scale.y, 1.0f); }
-	inline void setPos(const glm::vec3& pos) { mPos = pos; }
-	inline void Move(const glm::vec3& vec) { mPos += vec; }
-
-	// ゲッター
-	inline glm::vec3 getPos() { return mPos; }
-	inline glm::vec2 getSize() { return glm::vec2(mScale.x, mScale.y); }
-	inline glm::mat4 getModelMatrix() { return modelMatrix; }
-	inline glm::mat4 getPVM() { return pvmMatrix; }
 };
 

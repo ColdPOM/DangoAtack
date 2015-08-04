@@ -8,13 +8,6 @@
 // --------------------------------------------------------------
 class DebugGL
 {
-private:
-	Shader shader;
-	GLuint vertexbuffer;
-
-	GLuint vertexLocation;
-	GLuint colorLocation;
-
 public:
 	DebugGL(void);
 	~DebugGL(void);
@@ -34,5 +27,15 @@ public:
 	void DrawLine(glm::vec3 point1, glm::vec3 point2, glm::vec3 color = glm::vec3(1.0f, 1.0f, 1.0f)); // ü‚Ì•`‰æ
 	void DrawAxis();   // XYZ²‚ğ•\¦ 
 	void DrawSphereCol(glm::vec3 pos, float r, glm::vec3 rot = glm::vec3(0.0f,0.0f,0.0f)); // ‹…‚Ì“–‚½‚è”»’è‚Ì”ÍˆÍ‚Ì•\¦
+
+
+
+private:
+	Shader shader;
+	GLuint vertexbuffer;
+
+	GLuint vertexLocation;
+	GLuint colorLocation;
+
 };
 

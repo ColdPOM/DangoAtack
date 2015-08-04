@@ -13,6 +13,7 @@ private:
 	void DisplayCompileError(GLuint shader);					  // シェーダーのコンパイルエラー処理
 	void DisplayLinkError(GLuint program);					      // シェーダーのリンクエラー処理
 
+
 public:
 	Shader(void);
 	~Shader(void);

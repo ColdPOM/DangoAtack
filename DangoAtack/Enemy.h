@@ -9,36 +9,6 @@ class EnemyManager;
 
 class Enemy : public GameObject
 {
-private:
-	EnemyManager* mEnemyManager; // 自分を管理するマネージャー
-	Player* mPlayer;     // プレイヤーの参照用
-	int mState;			 // 敵の状態
-	int mType;           // 敵の種類
-	int mHitPoint;       // 敵のHP
-
-	float mAtackTime; // 攻撃を出した時間の記録
-
-	// カウンタとか
-	int mAtackCount;   // 攻撃時間のカウント
-	int mDeathCount;   // HPがゼロになってからの時間
-
-	// フラグ
-	bool mAtackComp; // 攻撃を出し切ったかどうか
-
-	// ZAKO用
-	float mScaleMeter; // 攻撃時などに使うスケール用
-	bool mScaleMotion;   // モーション時拡大するか縮小するか
-	float mMotionSpeed;  // モーション速度
-
-	// FIRE用
-	Shot* mShot;  // 発射する弾
-
-	// STONE用
-	int mWalkCount;        // ずり歩きのタイミングを計るためのカウント
-	glm::vec3 mTargetPos;  // 攻撃時の目標地点
-	bool mCameTargetPoint; // 目的地に着いたか
-	bool mBarrier;         // 落下時は無敵
-
 public:
 	Enemy(void);
 	~Enemy(void);
@@ -76,6 +46,38 @@ public:
 
 	// 敵をアクティブ化
 	void Active();
+
+
+
+private:
+	EnemyManager* mEnemyManager; // 自分を管理するマネージャー
+	Player* mPlayer;     // プレイヤーの参照用
+	int mState;			 // 敵の状態
+	int mType;           // 敵の種類
+	int mHitPoint;       // 敵のHP
+
+	float mAtackTime; // 攻撃を出した時間の記録
+
+	// カウンタとか
+	int mAtackCount;   // 攻撃時間のカウント
+	int mDeathCount;   // HPがゼロになってからの時間
+
+	// フラグ
+	bool mAtackComp; // 攻撃を出し切ったかどうか
+
+	// ZAKO用
+	float mScaleMeter; // 攻撃時などに使うスケール用
+	bool mScaleMotion;   // モーション時拡大するか縮小するか
+	float mMotionSpeed;  // モーション速度
+
+	// FIRE用
+	Shot* mShot;  // 発射する弾
+
+	// STONE用
+	int mWalkCount;        // ずり歩きのタイミングを計るためのカウント
+	glm::vec3 mTargetPos;  // 攻撃時の目標地点
+	bool mCameTargetPoint; // 目的地に着いたか
+	bool mBarrier;         // 落下時は無敵
 
 };
 

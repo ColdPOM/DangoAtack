@@ -4,26 +4,6 @@
 
 class GameObject
 {
-protected:
-	Model model; // モデルデータ
-
-	glm::vec3 mPos;    // 座標
-	glm::vec3 mScale;  // 拡大率
-	glm::vec3 mRotate; // 回転率
-
-	bool mIs;            // 生存フラグ
-	glm::vec3 mFront;    // 前方ベクトル
-	glm::vec3 mMoveVec;  // オブジェクトの動きを表すベクトル
-	float mSpeed;        // 移動スピード
-	bool mLand;          // 着地フラグ
-	bool mVisible;       // 可視
-
-	bool mStopFlag;  // ヒットストップフラグ
-	int mStopCount;  // ヒットストップカウント
-
-	bool mIsCol;        // 当たり判定可能かどうか
-	int mInvaildCount;  // 無敵時間カウント
-
 public:
 	GameObject(void);
 	virtual ~GameObject(void);
@@ -66,5 +46,28 @@ public:
 	inline void setRotate(glm::vec3 rot) { mRotate = rot; }
 	inline void setLand(bool land) { mLand = land; }
 	inline void setVisible(bool visble) { mVisible = visble; }
+
+
+
+protected:
+	Model model; // モデルデータ
+
+	glm::vec3 mPos;    // 座標
+	glm::vec3 mScale;  // 拡大率
+	glm::vec3 mRotate; // 回転率
+
+	bool mIs;            // 生存フラグ
+	glm::vec3 mFront;    // 前方ベクトル
+	glm::vec3 mMoveVec;  // オブジェクトの動きを表すベクトル
+	float mSpeed;        // 移動スピード
+	bool mLand;          // 着地フラグ
+	bool mVisible;       // 可視
+
+	bool mStopFlag;  // ヒットストップフラグ
+	int mStopCount;  // ヒットストップカウント
+
+	bool mIsCol;        // 当たり判定可能かどうか
+	int mInvaildCount;  // 無敵時間カウント
+
 };
 

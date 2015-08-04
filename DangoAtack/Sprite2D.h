@@ -11,21 +11,6 @@
 
 class Sprite2D
 {
-private:
-	Shader shader;		   // シェーダ
-	GLuint vertexArray;    // バーテックスアレイオブジェクト
-	GLuint texID;		   // テクスチャーのID
-
-	glm::vec2 mPos;		// 座標
-	float mRotate;      // 回転率
-	glm::vec2 mScale;   // 拡大率
-	glm::vec2 mTexSize; // テクスチャーのサイズ
-	float mAlpha;       // 透明度
-
-	// シェーダーに送るデータ
-	glm::mat4 rotateMatrix;
-	glm::mat4 modelMatrix;
-
 public:
 	Sprite2D(void);
 	~Sprite2D(void);
@@ -51,5 +36,20 @@ public:
 	inline float getWidth() { return mTexSize.x; }
 	inline float getHeight() { return mTexSize.y; }
 	inline float getAlpha() { return mAlpha; }
+
+private:
+	Shader shader;		   // シェーダ
+	GLuint vertexArray;    // バーテックスアレイオブジェクト
+	GLuint texID;		   // テクスチャーのID
+
+	glm::vec2 mPos;		// 座標
+	float mRotate;      // 回転率
+	glm::vec2 mScale;   // 拡大率
+	glm::vec2 mTexSize; // テクスチャーのサイズ
+	float mAlpha;       // 透明度
+
+	// シェーダーに送るデータ
+	glm::mat4 rotateMatrix;
+	glm::mat4 modelMatrix;
 };
 
