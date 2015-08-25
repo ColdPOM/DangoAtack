@@ -19,6 +19,7 @@ void Stage::Init(){
 	mLand.Load("land.pmd", "model/stage");
 	mSky.Load("sky.pmd", "model/stage");
 	mTree.Load("tree.pmd", "model/stage");
+	
 
 	BossBattle = false;
 

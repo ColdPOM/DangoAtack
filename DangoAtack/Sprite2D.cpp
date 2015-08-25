@@ -33,14 +33,14 @@ void Sprite2D::Load(const char* fileName){
 	mTexSize.y = texture.getHeight();
 
 	// ウィンドウサイズと画像サイズの比率
-	glm::vec2 size = glm::vec2(texture.getWidth() / static_cast<float>(WIN_W), texture.getHeight() / static_cast<float>(WIN_H));
+	mReducedScale = glm::vec2(1.0f / static_cast<float>(WIN_W), 1.0f / static_cast<float>(WIN_H));
 
 	// 頂点情報
 	const GLfloat vertexAndUV[] = {
-		size.x, size.y, 0.0f, 1.0f, 0.0f,
-		-size.x, size.y, 0.0f, 0.0f, 0.0f,
-		-size.x, -size.y, 0.0f, 0.0f, 1.0f,
-		size.x, -size.y, 0.0f, 1.0f, 1.0f
+		mTexSize.x, mTexSize.y, 0.0f, 1.0f, 0.0f,
+		-mTexSize.x, mTexSize.y, 0.0f, 0.0f, 0.0f,
+		-mTexSize.x, -mTexSize.y, 0.0f, 0.0f, 1.0f,
+		mTexSize.x, -mTexSize.y, 0.0f, 1.0f, 1.0f
 	};
 
 	// インデックス
@@ -117,6 +117,7 @@ void Sprite2D::Draw(){
 	// ユニフォーム変数へデータを送る
 	shader.UniformMatrix4fv("modelMatrix", modelMatrix);
 	shader.Uniform1f("Alpha", mAlpha);
+	shader.Unifor2fv("ReducadScale", mReducedScale);
 	glDisable(GL_DEPTH_TEST);
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, texID);
@@ -152,6 +153,7 @@ void Sprite2D::Draw(float pX, float pY, float alpha){
 	// ユニフォーム変数へデータを送る
 	shader.UniformMatrix4fv("modelMatrix", modelMatrix);
 	shader.Uniform1f("Alpha", mAlpha);
+	shader.Unifor2fv("ReducadScale", mReducedScale);
 	glDisable(GL_DEPTH_TEST);
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, texID);

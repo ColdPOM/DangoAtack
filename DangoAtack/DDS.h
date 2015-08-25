@@ -3,7 +3,7 @@
 
 namespace dds{
 
-	typedef struct DDPixelFormat
+	struct DDPixelFormat
 	{
 		GLuint size;
 		GLuint flgas;
@@ -15,7 +15,7 @@ namespace dds{
 		GLuint alphaMask;
 	};
 
-	typedef struct DDSCaps
+	struct DDSCaps
 	{
 		GLuint caps;
 		GLuint caps2;
@@ -23,13 +23,13 @@ namespace dds{
 		GLuint caps4;
 	};
 
-	typedef struct DDColorKey
+	struct DDColorKey
 	{
 		GLuint lowVal;
 		GLuint highVal;
 	};
 
-	typedef struct DDSurfaceDesc
+	struct DDSurfaceDesc
 	{
 		GLuint size;
 		GLuint flags;

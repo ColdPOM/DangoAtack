@@ -16,10 +16,6 @@ public:
 
 
 private:
-
-	static void Load(Title* self); // 別スレッドでのロード処理
-
-
 	Sprite2D mBackTex;  // 背景テクスチャ
 	Sprite2D mStartTex; // クリックスタート文字
 

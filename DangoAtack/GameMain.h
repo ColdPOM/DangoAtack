@@ -46,5 +46,9 @@ private:
 	Player mPlayer;
 	EnemyManager mEnemys;
 	Stage mStage;
+
+
+	// リソースのロード
+	static void Load(GameMain* self);
 };
 

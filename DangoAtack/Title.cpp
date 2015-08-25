@@ -20,24 +20,6 @@ Title::~Title(void)
 
 
 // ----------------------------------------------------------------------------
-/// 別スレッドでのロード処理
-/// [in] self 自クラスのポインタ
-/// ---------------------------------------------------------------------------
-void Title::Load(Title* self){
-	
-
-	/*self->mBGM.PlayBGM("sound/bgm.wav");
-	self->mStartSE.LoadSE("sound/start.wav");
-
-	while(true){
-		if(self->mBGM.LoadComp()) break;
-	}*/
-
-	self->mLoadComp = true;
-}
-
-
-// ----------------------------------------------------------------------------
 /// 初期化処理
 /// [in] window 使用するウィンドウのハンドル
 // ----------------------------------------------------------------------------
@@ -51,8 +33,7 @@ void Title::Init(){
 	mBGM.PlayBGM("sound/bgm.wav",true);
 	mStartSE.LoadSE("sound/start.wav");
 
-	std::thread th(Load, this);
-	th.detach();
+	mLoadComp = true;
 }
 
 
@@ -61,7 +42,7 @@ void Title::Init(){
 // ---------------------------------------------------------------------------
 Scene::SCENE Title::Update(){
 	Scene::Update();
-
+	
 	// スタート表示の点滅
 	if(mFadeFlag){
 		mStartTex.setAlpha(mStartTex.getAlpha() - mFadeSpeed);

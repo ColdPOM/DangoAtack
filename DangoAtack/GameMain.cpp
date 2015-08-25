@@ -1,5 +1,5 @@
 #include "GameMain.h"
-
+#include<map>
 
 GameMain::GameMain(GLFWwindow *window):Scene(window)
 {
@@ -13,6 +13,15 @@ GameMain::GameMain(GLFWwindow *window):Scene(window)
 
 GameMain::~GameMain(void)
 {
+}
+
+
+// ---------------------------------------------------------------------
+/// リソースのロード
+/// [in] self 自クラスのポインタ
+// ---------------------------------------------------------------------
+void Load(GameMain* self){
+
 }
 
 float GameMain::mWheelCount = 1; // ホイールの回転数
@@ -44,6 +53,7 @@ void GameMain::Init(){
 
 	camPos = mPlayer.getPos() + glm::vec3(0.0f, 5.0f, -10.0f);
 	lookAt = mPlayer.getPos() + mPlayer.getFront()*2.0f;
+
 }
 
 

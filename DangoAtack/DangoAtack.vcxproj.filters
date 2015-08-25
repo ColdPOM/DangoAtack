@@ -205,11 +205,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="シェーダー">
-      <UniqueIdentifier>{f66d86e9-970a-43f6-aa4d-2929ed7726d7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ライブラリ">
       <UniqueIdentifier>{3b031175-7781-43f0-905f-9ab753810be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ライブラリ\入力">
+      <UniqueIdentifier>{85b09b1a-9103-4dc3-b8ef-6ea2675b13af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ライブラリ\ファイル読み込み">
+      <UniqueIdentifier>{56125155-02f4-4fbe-85c7-62e609bfe867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ライブラリ\描画機能">
+      <UniqueIdentifier>{856b4745-aa4b-4d3b-a5a1-d91dd8582bcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="シェーダー">
+      <UniqueIdentifier>{f66d86e9-970a-43f6-aa4d-2929ed7726d7}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース">
       <UniqueIdentifier>{8b7aba42-eba0-4e8d-8148-fcd2c84c4e77}</UniqueIdentifier>
@@ -222,15 +231,6 @@
     </Filter>
     <Filter Include="ソース\シーン">
       <UniqueIdentifier>{79d520f3-9d97-4af8-9df3-ea61026c67b4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ライブラリ\入力">
-      <UniqueIdentifier>{85b09b1a-9103-4dc3-b8ef-6ea2675b13af}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ライブラリ\ファイル読み込み">
-      <UniqueIdentifier>{56125155-02f4-4fbe-85c7-62e609bfe867}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ライブラリ\描画機能">
-      <UniqueIdentifier>{856b4745-aa4b-4d3b-a5a1-d91dd8582bcb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

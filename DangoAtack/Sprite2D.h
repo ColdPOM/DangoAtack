@@ -47,6 +47,7 @@ private:
 	glm::vec2 mScale;   // 拡大率
 	glm::vec2 mTexSize; // テクスチャーのサイズ
 	float mAlpha;       // 透明度
+	glm::vec2 mReducedScale; // 図形の大きさ固定用
 
 	// シェーダーに送るデータ
 	glm::mat4 rotateMatrix;

@@ -40,12 +40,12 @@ namespace pmd {
 		vertex = new Vertex[header.vertexCount];
 		for(int i = 0; i < header.vertexCount; i++){
 			file.read((char*)&vertex[i], 38);
-			if(vertex[i].position.y > top) top = vertex[i].position.y;
-			if(vertex[i].position.y < bottom) bottom = vertex[i].position.y;
-			if(vertex[i].position.x > left) left = vertex[i].position.x;
-			if(vertex[i].position.x < right) right = vertex[i].position.x;
-			if(vertex[i].position.z > front) front = vertex[i].position.z;
-			if(vertex[i].position.z < back) back = vertex[i].position.z;
+			if(i == 0 || vertex[i].position.y > top) top = vertex[i].position.y;
+			if(i == 0 || vertex[i].position.y < bottom) bottom = vertex[i].position.y;
+			if(i == 0 || vertex[i].position.x > left) left = vertex[i].position.x;
+			if(i == 0 || vertex[i].position.x < right) right = vertex[i].position.x;
+			if(i == 0 || vertex[i].position.z > front) front = vertex[i].position.z;
+			if(i == 0 || vertex[i].position.z < back) back = vertex[i].position.z;
 		}
 		// サイズ計算
 		size.x = left - right;
